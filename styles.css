@@ -10,7 +10,7 @@ h1, #turn{
     margin: auto;
     color: white;
     text-align: center;
-    font-size: 7rem;
+    font-size: 6vw;
     font-family: Header;
 }
 .grid{
@@ -20,7 +20,6 @@ h1, #turn{
     grid-template-rows: repeat(3, 12vw);
     width: 98.2vw;
     height: 60vh;
-    margin-bottom: 10vh;
 }
 .grid button{
     border: rgb(255, 255, 255) solid;
@@ -34,16 +33,16 @@ button:hover{
 }
 .wins{
     display: flex;
-    text-align: center;
-    margin: auto;
     color: white;
-    width: 30vw;
-    justify-content: space-between;
+    justify-content: center;
+    position: relative;
+    top: 15vh;
+    width: 100%;
 }
 .reset{
-    justify-content: center;
     color: white;
-    font-size: 3vw;
+    font-size: 2.5vw;
     background-color: transparent;
     border: white 1px solid;
+    margin: 0 7vw 0 7vw;
 }
