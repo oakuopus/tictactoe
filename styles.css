@@ -19,7 +19,6 @@ h1, #turn{
     grid-template-columns: repeat(3, 12vw);
     grid-template-rows: repeat(3, 12vw);
     width: 98.2vw;
-    height: 60vh;
 }
 .grid button{
     border: rgb(255, 255, 255) solid;
@@ -34,14 +33,15 @@ button:hover{
 .wins{
     display: flex;
     color: white;
-    justify-content: center;
-    position: relative;
-    top: 15vh;
+    justify-content: center; 
+    margin-top: 2vh;
     width: 100%;
+    overflow: none;
+    font-size: 1vw;
 }
 .reset{
     color: white;
-    font-size: 2.5vw;
+    font-size: 3vw;
     background-color: transparent;
     border: white 1px solid;
     margin: 0 7vw 0 7vw;
