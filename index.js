@@ -1,6 +1,7 @@
 // Reset function emptys all cells with empty quotes
 var x = 0; // score
 var o = 0;
+num = 0
 var winner;
 let xWins = document.getElementById("xWins"), oWins = document.getElementById("oWins") // set score to variables
 function reset(){ // reset all cells with empty quotes
@@ -13,9 +14,11 @@ function reset(){ // reset all cells with empty quotes
     document.getElementById("7").innerHTML=""
     document.getElementById("8").innerHTML=""
     document.getElementById("9").innerHTML=""
+    num = 0
 }
 // function called onclick
 function box(box){
+    num++
     let boxer = document.getElementById(box); // set boxer as the cell that is clicked.
     let turn = document.getElementById("turn"); // set turn as whose turn it is.
     if(!winner){ //if their is a winner, dont run code
@@ -31,7 +34,7 @@ function box(box){
                 checkwinner()
             }
         }
-        
+    }
 }
 // determine all indexes that are possible win conditions.
 // var wins = [
@@ -81,6 +84,8 @@ function checkwinner(){
             winner = false;
             alert(`O has won!`);
         }
-    }else(!options.includes("")); {alert("Draw!")} // if all cells are full but no 3 in a row, alert a draw
+    }else if(num == 9){
+        alert("Draw!") // if all cells are full but no 3 in a row, alert a draw
     }
 }
+
