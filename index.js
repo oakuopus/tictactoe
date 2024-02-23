@@ -1,6 +1,6 @@
 // Reset function emptys all cells with empty quotes
-var x = 0; // score
-var o = 0;
+var x = 1; // score
+var o = 1;
 num = 0
 var winner; //set winner as false
 let xWins = document.getElementById("xWins"), oWins = document.getElementById("oWins") // set score to variables
